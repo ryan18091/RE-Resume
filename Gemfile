@@ -10,6 +10,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 source 'https://rubygems.org'
 gem 'rack'
 
-group :production do
-   gem 'heroku-deflater'
-end
+gem 'heroku-deflater', :group => :production
